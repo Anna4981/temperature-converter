@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Temperature Converter</h1>
+    <p class="subtitle">Type in any box and the other two update instantly.</p>
+
+    <form id="converter" novalidate>
+      <div class="field">
+        <label for="celsius">Celsius (°C)</label>
+        <input type="text" id="celsius" inputmode="decimal" autocomplete="off" placeholder="e.g. 25">
+        <p class="error" id="celsius-error" role="alert"></p>
+      </div>
+
+      <div class="field">
+        <label for="fahrenheit">Fahrenheit (°F)</label>
+        <input type="text" id="fahrenheit" inputmode="decimal" autocomplete="off" placeholder="e.g. 77">
+        <p class="error" id="fahrenheit-error" role="alert"></p>
+      </div>
+
+      <div class="field">
+        <label for="kelvin">Kelvin (K)</label>
+        <input type="text" id="kelvin" inputmode="decimal" autocomplete="off" placeholder="e.g. 298.15">
+        <p class="error" id="kelvin-error" role="alert"></p>
+      </div>
+
+      <button type="button" id="reset">Clear all</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
